@@ -3,39 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Sekolah Modern</title>
-    <link rel="stylesheet" href="tess/style.css">
+    <title>Website Sekolah Modern</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        /* Navbar */
+        header {
+            background: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #007BFF;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #007BFF;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #007BFF, #00C6FF);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background: white;
+            color: #007BFF;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #f1f1f1;
+        }
+
+        /* Program Section */
+        .program {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .program h2 {
+            margin-bottom: 30px;
+            font-size: 28px;
+            color: #007BFF;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Footer */
+        footer {
+            background: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
 
     <!-- Navbar -->
     <header>
-        <div class="logo">🏫 Sekolah Kita</div>
-        <nav>
-            <a href="#">Beranda</a>
-            <a href="#">Profil</a>
-            <a href="#">Galeri</a>
-            <a href="#">Kontak</a>
-        </nav>
+        <div class="container">
+            <div class="logo">SMK Cerdas Bangsa</div>
+            <nav>
+                <a href="#">Beranda</a>
+                <a href="#">Tentang</a>
+                <a href="#">Program</a>
+                <a href="#">Berita</a>
+                <a href="#">Kontak</a>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Selamat Datang di Sekolah Kita</h1>
-        <p>Tempat belajar, berprestasi, dan meraih masa depan cerah.</p>
-        <a href="#" class="btn">Pelajari Lebih Lanjut</a>
+        <div class="hero-content">
+            <h1>Selamat Datang di SMK Cerdas Bangsa</h1>
+            <p>Mencetak generasi unggul, berkarakter, dan siap menghadapi masa depan.</p>
+            <a href="#" class="btn">Pelajari Lebih Lanjut</a>
+        </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about">
-        <h2>Tentang Kami</h2>
-        <p>Sekolah Kita adalah lembaga pendidikan yang mengutamakan kualitas, inovasi, dan karakter siswa. Kami memiliki fasilitas modern, guru berpengalaman, dan program pembelajaran yang kreatif.</p>
+    <!-- Program Sekolah -->
+    <section class="program">
+        <div class="container">
+            <h2>Program Unggulan</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Teknologi Informasi</h3>
+                    <p>Penguasaan teknologi digital dan pengembangan perangkat lunak.</p>
+                </div>
+                <div class="card">
+                    <h3>Bahasa Asing</h3>
+                    <p>Penguasaan bahasa Inggris dan bahasa internasional lainnya.</p>
+                </div>
+                <div class="card">
+                    <h3>Kewirausahaan</h3>
+                    <p>Menumbuhkan jiwa bisnis dan inovasi sejak dini.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Sekolah Kita. Semua Hak Dilindungi.</p>
+        <p>&copy; 2025 SMK Cerdas Bangsa. Semua Hak Dilindungi.</p>
     </footer>
 
 </body>
-</html>
+    </html>
